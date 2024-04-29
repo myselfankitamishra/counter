@@ -1,3 +1,8 @@
+/* 
+    Other than the naming of the .div that I went into the detail in the index.html file, this is a pretty good stylesheet
+    You could improve quite a lot here from the visual perspective, but the task was more on the javascript part, which you 
+    handled perfectly.
+ */
 body{
     display: flex;
     justify-content: center;
