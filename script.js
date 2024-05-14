@@ -1,5 +1,9 @@
 let counterValue = 0;
 const upperLimit = 30;
+// Do not forget to add semicolons at the end of the lines.
+// While JS is forgiving and does not enforce it, its a good practice to keep doing it. 
+// You can also find an extension for the VS Code that would automatically do some tweaking 
+// of your js file to keep it consistent. I think its called Pretier, but double check.
 let counterDisplay = document.getElementById("counter")
  
 function increase(){
@@ -12,6 +16,7 @@ function increase(){
     }
    spanDisplay()
 }
+// Add an empty line after any function. This increases readibility.
 function decrease(){
     if(counterValue>0){
         counterValue--;
@@ -25,6 +30,7 @@ function reset(){
     plusButton.style.backgroundColor = "burlywood";
     return updateCounterDispay();
 }
+// Good job with extracting the same functionality into a function!
 function updateCounterDispay(){
     counterDisplay.textContent=counterValue;
     console.log(counterValue);
@@ -43,6 +49,7 @@ newSpan.style.color = "white";
 document.body.appendChild(newSpan);
 
 const plusButton = document.getElementById("plus");
+// This function is really hard to read due to the lack of indentation.
 function spanDisplay(){
 if(counterValue>=20){
 newSpan.textContent = "Out of Stock";

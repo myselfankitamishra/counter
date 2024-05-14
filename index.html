@@ -1,3 +1,10 @@
+<!-- 
+    Hi! Again, it was pretty good, and you have completed your assignemnt as it was asked.
+    (Minus a small thing to which I get a bit later). So, great job!
+    There are of course few things that you can improve on. 
+    For instance, its a good practice to keep your formatting the same, so try to use the 
+    same indentention levels for the lines that "siblings" to each other.
+ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +18,17 @@
     <div class="container">
         <div class="box"><span id="counter"><p>0</p></span></div>
         <div class="button">
+            <!-- You do not need comma to separate properties inside html tag -->
              <button id="reset", onclick="reset()">Reset</button>
+            <!-- 
+                The task was that minus button should be disabled when the counter is 0
+                And while your button does not allow the counter to change when the counter is 0,
+                visually it is not communicated to the user.
+                The "proper" way for this is to use disabled property of the button.
+                disabled="true" - would disable the button.
+                So, you can change your js updateCounterDispay() function to check for the value of the counter
+                and if its more than 0 - set disabled property to false
+             -->
            <button id="minus", onclick="decrease()">-</button>
            <button id="plus", onclick="increase()">+</button> 
           
